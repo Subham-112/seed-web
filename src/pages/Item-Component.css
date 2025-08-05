@@ -1,0 +1,97 @@
+.item-sec {
+  width: 50%;
+  height: 70%;
+  display: grid;
+  grid-template-rows: 20% 33% 32% 15%;
+  border-radius: 2rem;
+  background-color: white;
+  box-shadow: 0px 0px 50px 2px black;
+}
+
+.item-det {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 2rem;
+    padding-left: 1rem;
+}
+
+.item-det img {
+    height: 130px;
+}
+
+.item-det h1 {
+    font-size: 3rem;
+}
+
+.item-qty {
+    padding-left: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.item-qty h2 {
+    margin-left: 1.5rem;
+}
+
+.item-qty span {
+    height: 30%;
+    width: 60%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    /* border: 2px solid black; */
+}
+
+.item-qty span button {
+    width: 60px;
+    height: 50px;
+    border: 3px solid rgb(178, 178, 178);
+    border-radius: 1rem;
+    background-color: transparent;
+    font-size: 1.3rem;
+    /* padding: 1rem 1rem; */
+    cursor: pointer;
+}
+
+.item-qty span button:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.item-qty span button:active {
+    border: 3px solid green;
+}
+
+.cust-qty {
+    padding-left: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.cust-qty input {
+    border: 3px solid black;
+    height: 3rem;
+    width: 500px;
+}
+
+.cust-qty input::placeholder {
+    font-size: 1.2rem;
+}
+
+.item-cls-btn {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.item-cls-btn button {
+    border: 3px solid rgb(178, 178, 178);
+    border-radius: 20px;
+    font-size: 1.5rem;
+    padding: 1rem 2rem;
+    cursor: pointer;
+}
