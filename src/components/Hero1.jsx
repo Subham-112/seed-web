@@ -51,7 +51,7 @@ export default function HeroSlider() {
     const interval = setInterval(() => {
       setPrev(current);
       setCurrent((prevIndex) => (prevIndex + 1) % slides.length);
-    }, 2000);
+    }, 6000);
 
     return () => clearInterval(interval);
   }, [current, isAutoPlay]);

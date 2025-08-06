@@ -6,10 +6,12 @@ function Header() {
   const [activeDropdown, setActiveDropdown] = useState(null);
   const [isScrolled, setIsScrolled] = useState(false);
   const [isVisible, setIsVisible] = useState(true);
+  const [scrollDirection, setScrollDirection] = useState("down");
+
   const location = useLocation();
-  
+
   // Check if we're on the home page
-  const isHomePage = location.pathname === '/';
+  const isHomePage = location.pathname === "/";
 
   // Handle scroll effect for navigation visibility
   useEffect(() => {
@@ -18,27 +20,27 @@ function Header() {
 
     const updateScrolled = () => {
       const scrollY = window.scrollY;
-      
+
       if (isHomePage) {
         // On home page: hide nav initially, show when scrolling down
-        if (scrollY > 100) {
-          setIsScrolled(true);
+        if (scrollY > 500) {
+          setIsScrolled(false);
           // Show nav when scrolling down, hide when scrolling up fast
-          if (scrollY > lastScrollY && scrollY > 200) {
-            setIsVisible(false);
-          } else {
-            setIsVisible(true);
-          }
+          // if (scrollY > lastScrollY && scrollY > 200) {
+          //   setIsVisible(true);
+          // } else {
+          //   setIsVisible(true);
+          // }
         } else {
           setIsScrolled(false);
-          setIsVisible(false); // Hide when at top of home page
+          setIsVisible(true); // Hide when at top of home page
         }
       } else {
         // On other pages: always show nav
         setIsScrolled(scrollY > 100);
         setIsVisible(true);
       }
-      
+
       lastScrollY = scrollY;
       ticking = false;
     };
@@ -54,7 +56,7 @@ function Header() {
 
     // Set initial state
     if (isHomePage) {
-      setIsVisible(window.scrollY > 100);
+      setIsVisible(true);
       setIsScrolled(window.scrollY > 100);
     } else {
       setIsVisible(true);
@@ -116,8 +118,10 @@ function Header() {
 
   return (
     <>
-      <header 
-        className={`header ${isScrolled ? 'header-scrolled' : ''} ${isVisible ? 'header-visible' : 'header-hidden'} ${isHomePage ? 'header-home' : ''}`}
+      <header
+        className={`header ${isScrolled ? "header-home" : ""} ${
+          isVisible ? "header-visible" : "header-hidden"
+        }`}
       >
         <div className="container">
           <div className="logo">
@@ -135,7 +139,11 @@ function Header() {
                 </Link>
               </li>
 
-              <li className={`dropdown ${activeDropdown === "about" ? "active" : ""}`}>
+              <li
+                className={`dropdown ${
+                  activeDropdown === "about" ? "active" : ""
+                }`}
+              >
                 <div
                   className="dropdown-trigger"
                   onClick={(e) => {
@@ -165,7 +173,11 @@ function Header() {
                 </div>
               </li>
 
-              <li className={`dropdown ${activeDropdown === "services" ? "active" : ""}`}>
+              <li
+                className={`dropdown ${
+                  activeDropdown === "services" ? "active" : ""
+                }`}
+              >
                 <div
                   className="dropdown-trigger"
                   onClick={(e) => {
@@ -195,7 +207,11 @@ function Header() {
                 </div>
               </li>
 
-              <li className={`dropdown ${activeDropdown === "products" ? "active" : ""}`}>
+              <li
+                className={`dropdown ${
+                  activeDropdown === "products" ? "active" : ""
+                }`}
+              >
                 <div
                   className="dropdown-trigger"
                   onClick={(e) => {
@@ -231,7 +247,11 @@ function Header() {
                 </Link>
               </li>
 
-              <li className={`dropdown ${activeDropdown === "quality" ? "active" : ""}`}>
+              <li
+                className={`dropdown ${
+                  activeDropdown === "quality" ? "active" : ""
+                }`}
+              >
                 <div
                   className="dropdown-trigger"
                   onClick={(e) => {

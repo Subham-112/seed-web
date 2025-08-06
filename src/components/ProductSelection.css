@@ -464,6 +464,11 @@
 }
 
 @media (max-width: 480px) {
+  .product-selection {
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
+  
   .quick-buttons {
     gap: 4px;
   }

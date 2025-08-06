@@ -27,51 +27,53 @@ function Footer() {
               </a>
             </div>
           </div>
-          <div className="footer-section">
-            <h4>Quick Links</h4>
-            <ul>
-              <li>
-                <a href="#home">Home</a>
-              </li>
-              <li>
-                <a href="#about">About Us</a>
-              </li>
-              <li>
-                <a href="#services">Services</a>
-              </li>
-              <li>
-                <a href="#products">Products</a>
-              </li>
-              <li>
-                <a href="#gallery">Gallery</a>
-              </li>
-              <li>
-                <a href="#contact">Contact</a>
-              </li>
-            </ul>
-          </div>
-          <div className="footer-section">
-            <h4>Products</h4>
-            <ul>
-              <li>
-                <a href="#">Fresh Vegetables</a>
-              </li>
-              <li>
-                <a href="#">Fresh Fruits</a>
-              </li>
-              <li>
-                <a href="#">Spices & Herbs</a>
-              </li>
-              <li>
-                <a href="#">Grains & Cereals</a>
-              </li>
-              <li>
-                <a href="#">Pulses & Legumes</a>
-              </li>
-              <li>
-                <a href="#">Oil Seeds</a>
-              </li>
-            </ul>
+          <div className="footer-link">
+            <div className="footer-section">
+              <h4>Quick Links</h4>
+              <ul>
+                <li>
+                  <a href="#home">Home</a>
+                </li>
+                <li>
+                  <a href="#about">About Us</a>
+                </li>
+                <li>
+                  <a href="#services">Services</a>
+                </li>
+                <li>
+                  <a href="#products">Products</a>
+                </li>
+                <li>
+                  <a href="#gallery">Gallery</a>
+                </li>
+                <li>
+                  <a href="#contact">Contact</a>
+                </li>
+              </ul>
+            </div>
+            <div className="footer-section">
+              <h4>Products</h4>
+              <ul>
+                <li>
+                  <a href="#">Fresh Vegetables</a>
+                </li>
+                <li>
+                  <a href="#">Fresh Fruits</a>
+                </li>
+                <li>
+                  <a href="#">Spices & Herbs</a>
+                </li>
+                <li>
+                  <a href="#">Grains & Cereals</a>
+                </li>
+                <li>
+                  <a href="#">Pulses & Legumes</a>
+                </li>
+                <li>
+                  <a href="#">Oil Seeds</a>
+                </li>
+              </ul>
+            </div>
           </div>
           <div className="footer-section">
             <h4>Contact Info</h4>
