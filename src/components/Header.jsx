@@ -125,7 +125,9 @@ function Header() {
       >
         <div className="container">
           <div className="logo">
-            <div className="logo-img">F</div>
+            <div className="logo-img">
+              <img src="/images/logo.png" />
+            </div>
             <Link to="/" className="logo-text" onClick={closeMenu}>
               Field to Feed Export
             </Link>
