@@ -3015,14 +3015,24 @@ body {
     padding-right: 1rem;
   }
 
+  .certifications-grid {
+    padding-left: 1rem;
+  }
+
+  .certificate-cont {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
   .certification-card {
-    width: 81%;
+    width: 95%;
     padding-top: 1rem;
   }
 
   .quality-commitment {
-    border: 2px solid black;
-    width: 81%;
+    width: 95%;
+    margin-top: 3rem;
     padding-top: 1.5rem;
     padding-bottom: 2rem;
     padding-left: 1rem;
@@ -3036,6 +3046,7 @@ body {
 
   .point {
     gap: 0.5rem;
+    margin-left: 1rem;
   }
 
   .commitment-points .point p {
@@ -4453,6 +4464,12 @@ html {
   color: var(--text-light);
   line-height: 1.6;
   margin: 0;
+}
+
+@media (max-width: 480px) {
+  .content-intro p {
+    font-size: 1.1rem;
+  }
 }
 
 /* Quality Assurance Section */

@@ -1,3 +1,5 @@
+import './Certification.css'
+
 function Certifications() {
   const certifications = [
     {
@@ -34,13 +36,13 @@ function Certifications() {
   ];
 
   return (
-    <section className="certifications" id="certifications">
+    <section className="certifications-hm certifications" id="certifications">
       <div className="container">
         <div className="section-header">
           <h2>Certifications & Quality Assurance</h2>
           <p>Committed to International Standards and Quality</p>
         </div>
-        <div className="certifications-content">
+        <div className="certifications-content-hm certifications-content">
           <div className="certifications-grid">
             {certifications.map((cert, index) => (
               <div key={index} className="certification-card">
@@ -53,19 +55,19 @@ function Certifications() {
           <div className="quality-commitment">
             <h3>Our Quality Commitment</h3>
             <div className="commitment-points">
-              <div className="point">
+              <div className="point-hm point">
                 <span className="point-icon">✓</span>
                 <p>Strict adherence to international quality standards</p>
               </div>
-              <div className="point">
+              <div className="point-hm point">
                 <span className="point-icon">✓</span>
                 <p>Regular third-party audits and inspections</p>
               </div>
-              <div className="point">
+              <div className="point-hm point">
                 <span className="point-icon">✓</span>
                 <p>Comprehensive testing at state-of-the-art laboratories</p>
               </div>
-              <div className="point">
+              <div className="point-hm point">
                 <span className="point-icon">✓</span>
                 <p>Traceability from farm to export destination</p>
               </div>

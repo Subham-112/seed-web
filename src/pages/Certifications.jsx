@@ -50,7 +50,7 @@ function Certifications() {
       </section>
 
       <section className="page-content">
-        <div className="container">
+        <div className="certificate-cont container">
           <div className="content-intro">
             <h2>Quality Assurance & Certifications</h2>
             <p>

@@ -1,0 +1,19 @@
+.certifications-hm {
+    padding: 2rem 0;
+}
+
+.certifications-content-hm {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.point-hm {
+    margin-left: 1rem;
+}
+
+.point-hm p {
+    width: 100%;
+    /* border: 2px solid black; */
+}
